@@ -1,21 +1,52 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "stripInternal": true,
-    "declaration": true,
-    "outDir": "./dist",
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
     "lib": [
-      "es2015",
-      "dom"
+      "esnext"
+    ],
+
+
+    "declaration": false,
+    "downlevelIteration": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "inlineSourceMap": false,
+
+    "noEmitHelpers": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noLib": false,
+    "pretty": true,
+
+    "removeComments": true,
+    "sourceMap": true,
+
+    "strictNullChecks": false,
+
+
+    "module": "commonjs",
+    "target": "esnext",
+
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules"
     ]
   },
-  "files": [
-    "./src/dom-event-object.ts"
-  ]
+  "include": [
+    "src/**/*",
+    "examples/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false
 }
