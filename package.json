@@ -1,0 +1,23 @@
+{
+  "name": "class-helper",
+  "version": "0.0.1",
+  "description": "Improve class possibilities",
+  "main": "dist/ClassHelper.js",
+  "types": "dist/ClassHelper.d.ts",
+  "scripts": {
+    "start": "npm run build && npm run minimify",
+    "build": "tsc",
+    "minimify": "uglifyjs ./dist/ClassHelper.js --stats -m -o ./dist/ClassHelper.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifaon74/ClassHelper"
+  },
+  "author": "valentin",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "latest",
+    "uglify-js": "latest"
+  },
+  "dependencies": {}
+}
